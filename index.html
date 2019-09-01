@@ -273,7 +273,7 @@ map.on('load', function() {
   });
 
   if (obstruction.length > 0) {
-    document.getElementById('features').innerHTML = '<h3>Area: <strong>' + obstruction[0].properties.regn_nm + '</strong></h3><p><strong>Severity of Obstruction: <em>' + obstruction[0].properties.Severty + '</strong></h3><p><strong>Type of Obstruction: <em>' + obstruction[0].properties.LablTyp ;
+    document.getElementById('features').innerHTML = '<h3>Area: <strong>' + obstruction[0].properties.regn_nm + '</strong></h3><p><strong>Severity of Obstruction: <em>' + obstruction[0].properties.Severty + '</strong></h3><p><strong>Type of Obstruction: <em>' + obstruction[0].properties.LablTyp + '</strong></h3><p><strong>Neighborhood Ranking: <em>' + obstruction[0].properties.Rank;
   } else {
     document.getElementById('features').innerHTML = '<h2>D.C. Sidewalk Obstructions</h2><p>Hover over an obstruction to get more information.</p>';
   }
