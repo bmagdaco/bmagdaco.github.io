@@ -273,7 +273,7 @@ map.on('load', function() {
   });
 
   if (obstruction.length > 0) {
-    document.getElementById('features').innerHTML = '<h3>Area: <strong>' + obstruction[0].properties.regn_nm + '</strong></h3><p><strong>Severity of Obstruction: <em>' + obstruction[0].properties.Severty + '</strong></h3><p><strong>Type of Obstruction: <em>' + obstruction[0].properties.LablTyp + '</em></strong></p><p><strong>Neighborhood Ranking (out of 111): ' + obstruction[0].properties.Rank_1 '(1 is worst)' + '</strong></p><p>Total Number of Obstructions: ' + obstruction[0].properties.Join_Cou_2 ;
+    document.getElementById('features').innerHTML = '<h3>Area: <strong>' + obstruction[0].properties.regn_nm + '</strong></h3><p><strong>Severity of Obstruction: <em>' + obstruction[0].properties.Severty + '</strong></h3><p><strong>Type of Obstruction: <em>' + obstruction[0].properties.LablTyp + '</em></strong></p><p><strong>Neighborhood Ranking (out of 111 - 1 is worst): ' + obstruction[0].properties.Rank_1 + '</strong></p><p>Total Number of Obstructions: ' + obstruction[0].properties.Join_Cou_2 ;
   } else {
     document.getElementById('features').innerHTML = '<h2>D.C. Sidewalk Obstructions</h2><p>Hover over an obstruction to get more information.</p>';
   }
