@@ -269,7 +269,7 @@ map.on('load', function() {
 
   map.on('mousemove', function(e) {
   var obstruction = map.queryRenderedFeatures(e.point, {
-    layers: ['sidewalkdata1']
+    layers: ['sidewalkdata']
   });
 
   if (obstruction.length > 0) {
